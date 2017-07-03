@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Weather Helper</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <h1></h1>
+    <h2></h2>
+    <label></label>
+<form id= "apiOptions" onsubmit = "handleSubmit()">
+<fieldset>
+  <legend>Build Your Weather Details</legend>
+    <label>Location:
+      <input type="radio" name="selection" value="Seattle" checked> Seattle<br>
+    </label>
+    <label>
+      <input type="radio" name="selection" value="London"> London<br>
+    </label>
+    <label>Display Temperature In:
+      <select name="units">
+        <option value="Celcius">Celcius</option>
+        <option value="Farenheit">Farenheit</option>
+      </select>
+    </label>
+    <label>What would you like to know?:
+      <input type="checkbox" name="info" value="temperature"> Temperature<br>
+      <input type="checkbox" name="info" value="weather overall"> General Description<br>
+      <input type="checkbox" name="info" value="humidity"> Humidity<br>
+      <input type="checkbox" name="info" value="Sunset"> Time of Sunset<br>
+      <input type="checkbox" name="info" value="Sunrise"> Time of Sunrise<br>
+    </label>
+<button input type="submit">Click for Weather!</button>
+</form>
+
+<ul id="weather">
+</ul>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="moment.js"></script>
+<script>
+    moment().format();
+</script>
+  </body>
+</html>
