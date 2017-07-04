@@ -6,8 +6,8 @@ const form = document.getElementById("apiOptions")
 let debug = null
 
 const coordinates = [
-  {lat: 51.5074, lon: 0.1278}, //london
-  {lat: 47.6762, lon: -122.3182} //seattle
+  {lat: 47.6762, lon: -122.3182}, //seattle
+  {lat: 51.5074, lon: 0.1278} //london
 ]
 
 function addCoords(){
@@ -28,13 +28,14 @@ function handleSubmit () {
   event.preventDefault()
   console.log(form)
   // get form values
-  var cityChoice = form.selection.value
-  if (form.selection.value === "London"){
-    var cityChoice = coordinates[0];
-  } else if (form.selection.value === "Seattle") {
-    var cityChoice = coordinates[1];
-  } else {
-    var cityChoice = coordinates[2];
+
+  if (form.selection[0].value === "Seattle"){
+    var cityChoice = coordinates[0]
+    console.log(cityChoice)
+  } else if (form.selection[1].value === "London") {
+    var cityChoice = coordinates[1]
+  } else if (form.selection[2].value === "My Location") {
+    var cityChoice = coordinates[2]
   }
   // serialize them into a query string
   let queryString = buildQuery(cityChoice)
@@ -43,7 +44,6 @@ function handleSubmit () {
   getWeather(queryString)
 }
 
-
 function buildQuery(cityChoice) {
   if (form.units.value == "Celcius"){
     return `${apiURL}?lat=${cityChoice.lat}&lon=${cityChoice.lon}&units=metric&APPID=${apiKey}`
@@ -51,7 +51,6 @@ function buildQuery(cityChoice) {
     return `${apiURL}?lat=${cityChoice.lat}&lon=${cityChoice.lon}&units=imperial&APPID=${apiKey}`
   }
 }
-
 
 function getWeather (queryString) {
   let request = new XMLHttpRequest()

@@ -19,13 +19,13 @@
         <fieldset>
           <legend>Build Your Weather Details</legend>
           <label>Location:
-            <input type="button" class="enjoy-css" name="selection" value="Seattle">
+            <input class="enjoy-css" type="button" name="selection" value="Seattle">
           </label>
           <label>
-            <input type="button" class="enjoy-css2" name="selection" value="London">
+            <input class="enjoy-css2" type="button" name="selection" value="London">
           </label>
           <label>
-            <input type="button" class="enjoy-css3" name="selection" value="My Location" onclick="addCoords()">
+            <input class="enjoy-css3" type="button" name="selection" value="My Location" onclick="addCoords()">
           </label>
           <label>Display Temperature In:
             <select name="units">
@@ -41,7 +41,6 @@
             <input type="checkbox" name="info" value="'Sunset: ' + moment(sunsetUnix*1000).toString()"> Time of Sunrise<br>
           </label>
           <button type="submit" class="btn">Click for Weather!</button>
-        </fieldset>
       </form>
       <ul id="weather">
         <h3>Here's what to expect:</h3>
