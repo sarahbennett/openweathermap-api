@@ -6,46 +6,50 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
-
-
-    <h1></h1>
-    <h2></h2>
+    <header id="grad">
+      <h1>The Weather Builder</h1>
+      <h2>Get the weather, tell the future</h2>
+    </header>
     <label></label>
-<form id= "apiOptions" onsubmit = "handleSubmit()">
-<fieldset>
-  <legend>Build Your Weather Details</legend>
-    <label>Location:
-      <input type="radio" name="selection" value="Seattle" checked> Seattle<br>
-    </label>
-    <label>
-      <input type="radio" name="selection" value="London"> London<br>
-    </label>
-    <label>Display Temperature In:
-      <select name="units">
-        <option value="Celcius">Celcius</option>
-        <option value="Farenheit">Farenheit</option>
-      </select>
-    </label>
-    <label>What would you like to know?:
-      <input type="checkbox" name="info" value="temperature"> Temperature<br>
-      <input type="checkbox" name="info" value="weather overall"> General Description<br>
-      <input type="checkbox" name="info" value="humidity"> Humidity<br>
-      <input type="checkbox" name="info" value="Sunset"> Time of Sunset<br>
-      <input type="checkbox" name="info" value="Sunrise"> Time of Sunrise<br>
-    </label>
-<button input type="submit">Click for Weather!</button>
-</form>
-
-<ul id="weather">
-</ul>
-
-
+      <form id= "apiOptions" onsubmit = "handleSubmit()">
+        <fieldset>
+          <legend>Build Your Weather Details</legend>
+          <label>Location:
+            <input type="button" class="enjoy-css" name="selection" value="Seattle">
+          </label>
+          <label>
+            <input type="button" class="enjoy-css2" name="selection" value="London">
+          </label>
+          <label>
+            <input type="button" class="enjoy-css3" name="selection" value="My Location" onclick="addCoords()">
+          </label>
+          <label>Display Temperature In:
+            <select name="units">
+              <option value="Celcius">Celcius</option>
+              <option value="Farenheit">Farenheit</option>
+            </select>
+          </label>
+          <label>What would you like to know?:
+            <input type="checkbox" name="info" value="'Temperature: ' + response.main.temp+'\u00B0'"> Temperature<br>
+            <input type="checkbox" name="info" value="'Overall weather: ' + response.weather[0].description"> General Description<br>
+            <input type="checkbox" name="info" value="'Humidity percentage: ' + response.main.humidity+'%'"> Humidity<br>
+            <input type="checkbox" name="info" value="'Sunrise: ' + moment(sunriseUnix*1000).toString()"> Time of Sunset<br>
+            <input type="checkbox" name="info" value="'Sunset: ' + moment(sunsetUnix*1000).toString()"> Time of Sunrise<br>
+          </label>
+          <button type="submit" class="btn">Click for Weather!</button>
+        </fieldset>
+      </form>
+      <ul id="weather">
+        <h3>Here's what to expect:</h3>
+      </ul>
     <script type="text/javascript" src="script.js"></script>
     <script src="moment.js"></script>
-<script>
+    <script>
     moment().format();
-</script>
+    </script>
   </body>
 </html>

@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    margin: 0;
+    padding: .7rem 1rem;
+    background-color: #FF1D52;
+    font-family: 'Oswald', sans-serif;
+  }
+
+header h1 {
+  display: flex;
+  margin-left: 6rem;
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+header h2 {
+  margin-left: 6rem;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h3 {
+  margin: auto;
+}
+
+#grad {
+  background: #D7A099; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #D7A099, #475DA9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #D7A099, #475DA9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #D7A099, #475DA9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #D7A099, #475DA9); /* Standard syntax */
+}
+
+form {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 5%;
+  padding: 1rem;
+  border: 1px gray solid;
+  width: 90%;
+}
+
+ul {
+  margin-left: 5rem;
+}
+
+label:after {
+  content: "";
+  display: table;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #2A4B9C;
+  color: #ffffff;
+  margin: 1rem 11rem;
+  -webkit-transition-duration: 0.8s; /* Safari */
+  transition-duration: 0.8s;
+}
+
+.btn:hover {
+  background-color: #DEA99B;
+  color: white;
+}
+
+input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #475da9;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.enjoy-css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  margin: 5px;
+  padding: 43px 95px 43px 97px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font: normal 24px/22px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: rgba(255,255,255,0.98);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: url("http://enjoycss.com/bg-img/custom/50025-185vjhg.jpg");
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -2px 0 rgba(40,40,40,1) ;
+}
+
+.enjoy-css2 {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  margin: 5px;
+  padding: 43px 92px 43px 92px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font: normal 24px/22px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: rgba(255,255,255,0.98);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: url("http://enjoycss.com/bg-img/custom/50025-ebe031.jpg");
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -2px 0 rgba(40,40,40,1) ;
+}
+
+.enjoy-css3 {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  margin: 5px;
+  padding: 43px 67px 43px 67px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font: normal 24px/22px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: rgba(255,255,255,0.98);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-linear-gradient(-90deg, #475DA9 0, #475DA9 1%, #D7A099 100%);
+  background: -moz-linear-gradient(180deg, #475DA9 0, #475DA9 1%, #D7A099 100%);
+  background: linear-gradient(180deg, #475DA9 0, #475DA9 1%, #D7A099 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -2px 0 rgba(40,40,40,1) ;
+}
+
+@media(min-width: 700px){
