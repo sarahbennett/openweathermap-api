@@ -79,11 +79,10 @@ function getWeather (queryString) {
       }
 
     let weatherDiv = document.getElementById("weather")
-    var li = document.createElement("li");
     for (i = 0; i < weatherInfo.length; i++) {
+        var li = document.createElement("li");
         li.innerHTML = eval(weatherInfo[i]);
         weatherDiv.appendChild(li);
-        weatherInfo = []
       }
   }
 
