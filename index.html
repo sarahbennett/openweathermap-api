@@ -3,8 +3,8 @@
   <head lang="en">
     <meta charset="utf-8">
     <title>Weather Helper</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -19,13 +19,13 @@
         <fieldset>
           <legend>Build Your Weather Details</legend>
           <label>Location:<br>
-            <input class="enjoy-css" type="button" name="selection" value="Seattle">
+            <input class="enjoy-css" type="button" name="selection" value="Seattle" data-index="0">
           </label>
           <label>
-            <input class="enjoy-css2" type="button" name="selection" value="London">
+            <input class="enjoy-css2" type="button" name="selection" value="London" data-index="1">
           </label>
           <label>
-            <input class="enjoy-css3" type="button" name="selection" value="My Location" data-index="2" onclick="addCoords()">
+            <input class="enjoy-css3" type="button" name="selection" value="My Location" data-index="2">
           </label>
           <br>
           <label>Display Temperature In:
@@ -47,8 +47,8 @@
           </ul>
         </fieldset>
       </form>
-    <script type="text/javascript" src="script.js"></script>
-    <script src="moment.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script src="/scripts/moment.js"></script>
     <script>
     moment().format();
     </script>
