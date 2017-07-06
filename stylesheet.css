@@ -27,10 +27,6 @@ header h2 {
   line-height: 2rem;
 }
 
-h3 {
-  margin: auto;
-}
-
 #grad {
   background: #D7A099; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #D7A099, #475DA9); /* For Safari 5.1 to 6.0 */
@@ -47,8 +43,8 @@ form {
   width: 90%;
 }
 
-ul {
-  margin-left: 5rem;
+label {
+  font-size: 1.8rem;
 }
 
 label:after {
@@ -60,7 +56,8 @@ label:after {
 .btn {
   background: #2A4B9C;
   color: #ffffff;
-  margin: 1rem 11rem;
+  margin-top: 2rem;
+  margin-left: 9rem;
   -webkit-transition-duration: 0.8s; /* Safari */
   transition-duration: 0.8s;
 }

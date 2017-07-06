@@ -18,33 +18,35 @@
       <form id= "apiOptions" onsubmit = "handleSubmit()">
         <fieldset>
           <legend>Build Your Weather Details</legend>
-          <label>Location:
+          <label>Location:<br>
             <input class="enjoy-css" type="button" name="selection" value="Seattle">
           </label>
           <label>
             <input class="enjoy-css2" type="button" name="selection" value="London">
           </label>
           <label>
-            <input class="enjoy-css3" type="button" name="selection" value="My Location" onclick="addCoords()">
+            <input class="enjoy-css3" type="button" name="selection" value="My Location" data-index="2" onclick="addCoords()">
           </label>
+          <br>
           <label>Display Temperature In:
             <select name="units">
               <option value="Celcius">Celcius</option>
               <option value="Farenheit">Farenheit</option>
             </select>
           </label>
-          <label>What would you like to know?:
+          <br>
+          <label>What would you like to know?:</label><br>
             <input type="checkbox" name="info" value="'Temperature: ' + response.main.temp+'\u00B0'"> Temperature<br>
             <input type="checkbox" name="info" value="'Overall weather: ' + response.weather[0].description"> General Description<br>
             <input type="checkbox" name="info" value="'Humidity percentage: ' + response.main.humidity+'%'"> Humidity<br>
-            <input type="checkbox" name="info" value="'Sunrise: ' + moment(sunriseUnix*1000).toString()"> Time of Sunset<br>
-            <input type="checkbox" name="info" value="'Sunset: ' + moment(sunsetUnix*1000).toString()"> Time of Sunrise<br>
-          </label>
+            <input type="checkbox" name="info" value="'Sunrise: ' + moment(sunriseUnix*1000).toString()"> Time of Sunrise<br>
+            <input type="checkbox" name="info" value="'Sunset: ' + moment(sunsetUnix*1000).toString()"> Time of Sunset<br>
           <button type="submit" class="btn">Click for Weather!</button>
+          <h3 id="location">Here's what to expect:</h3>
+          <ul id="weather">
+          </ul>
+        </fieldset>
       </form>
-      <ul id="weather">
-        <h3>Here's what to expect:</h3>
-      </ul>
     <script type="text/javascript" src="script.js"></script>
     <script src="moment.js"></script>
     <script>
