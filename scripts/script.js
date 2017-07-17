@@ -1,4 +1,4 @@
-const apiURL = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather"
+const apiURL = "https://uwpce-weather-proxy.herokuapp.com/data/2.5/weather"
 const apiKey = "6410c52bfcdfdfea3c892dda7d405055"
 //need to append: ?lat={lat}&lon={lon}&APPID=6410c52bfcdfdfea3c892dda7d405055
 
@@ -54,7 +54,7 @@ function getWeather (queryString) {
   request.open("GET", queryString, true)
   // fires when the request is complete
   request.onload = function () {
-    let response = JSON.parse(request.response);
+    let response = JSON.parse(request.response).body;
 
     document.getElementById("location").innerHTML = "Here's what to expect today in " + response.name + ":"
 
