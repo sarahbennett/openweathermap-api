@@ -96,7 +96,7 @@ label:after {
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   text-shadow: -1px -2px 0 #282828;
-  background-image: url("/images/1.jpg"); }
+  background-image: url("../images/1.jpg"); }
 
 .enjoy-css2 {
   display: inline-block;
@@ -113,7 +113,7 @@ label:after {
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   text-shadow: -1px -2px 0 #282828;
-  background-image: url("/images/2.jpg"); }
+  background-image: url("../images/2.jpg"); }
 
 .enjoy-css3 {
   display: inline-block;
