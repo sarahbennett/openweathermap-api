@@ -1,0 +1,158 @@
+@import "variables.scss";
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+main {
+  background: $white;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin: 0;
+  padding: .7rem 1rem;
+  font-family: $oswald;
+}
+
+header h1 {
+  display: flex;
+  margin-left: 6rem;
+  color: $white;
+  line-height: 1.5rem;
+}
+
+header h2 {
+  margin-left: 6rem;
+  color: $white;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+#grad {
+  background: $gradient-blue;
+  background: linear-gradient(to bottom right, $gradient-pink, $gradient-blue);
+}
+
+form {
+  font-family: $open-sans;
+  margin: 1% 5%;
+  padding: 1rem;
+  border: 1px $dark-grey solid;
+  width: 90%;
+}
+
+label {
+  font-size: 1.8rem;
+}
+
+label:after {
+  content: "";
+  display: table;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: $submit-color;
+  color: $white;
+  margin-top: 2rem;
+  margin-left: 9rem;
+  transition-duration: 0.8s;
+}
+
+.btn:hover {
+  background-color: $submit-hover-color;
+  color: $white;
+}
+
+.enjoy-css {
+    display: inline-block;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin: $btn-margin;
+    padding: $btn-padding;
+    border: $btn-border;
+    border-radius: $btn-border-radius;
+    font: $btn-font;
+    color: $btn-color;
+    background-position: $btn-background;
+    box-shadow: $btn-box-shadow;
+    text-shadow: $btn-text-shadow;
+    background-image:url("/images/1.jpg")
+}
+
+.enjoy-css2 {
+  display: inline-block;
+  box-sizing: content-box;
+  cursor: pointer;
+  margin: $btn-margin;
+  padding: $btn-padding;
+  border: $btn-border;
+  border-radius: $btn-border-radius;
+  font: $btn-font;
+  color: $btn-color;
+  background-position: $btn-background;
+  box-shadow: $btn-box-shadow;
+  text-shadow: $btn-text-shadow;
+  background-image:url("/images/2.jpg")
+}
+
+.enjoy-css3 {
+  display: inline-block;
+  box-sizing: content-box;
+  cursor: pointer;
+  margin: $btn-margin;
+  padding: $btn-padding;
+  border: $btn-border;
+  border-radius: $btn-border-radius;
+  font: $btn-font;
+  color: $btn-color;
+  background-position: $btn-background;
+  box-shadow: $btn-box-shadow;
+  text-shadow: $btn-text-shadow;
+  background: linear-gradient(180deg, $gradient-blue 0, $gradient-blue 1%, $gradient-pink 100%);
+}
+
+input[type='checkbox'] {
+  &:after {
+    width: $checkbox-size;
+    height: $checkbox-size;
+    border-radius: $checkbox-size;
+    top: $checkbox-top;
+    left: $checkbox-left;
+    position: relative;
+    background-color: $light-grey;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: $checkbox-border-size solid $white;
+  }
+
+  &:checked:after {
+    width: $checkbox-size;
+    height: $checkbox-size;
+    border-radius: $checkbox-size;
+    top: $checkbox-top;
+    left: $checkbox-left;
+    position: relative;
+    background-color: $gradient-blue;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: $checkbox-border-size solid $white;
+  }
+}
