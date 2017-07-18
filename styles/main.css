@@ -81,7 +81,7 @@ label:after {
   background-color: #DEA99B;
   color: #fff; }
 
-.enjoy-css {
+.enjoy-css1 {
   display: inline-block;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -130,8 +130,7 @@ label:after {
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   text-shadow: -1px -2px 0 #282828;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #475DA9), color-stop(1%, #475DA9), to(#D7A099));
-  background: linear-gradient(180deg, #475DA9 0, #475DA9 1%, #D7A099 100%); }
+  background-image: url("../images/3.jpg"); }
 
 input[type='checkbox']:after {
   width: 15px;

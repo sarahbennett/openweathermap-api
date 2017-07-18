@@ -12,7 +12,7 @@ $submit-color: #2A4B9C;
 $submit-hover-color: #DEA99B;
 $body-font-color: $dark-grey;
 
-// Button Variables
+// Input Button Variables
 $btn-margin: 5px;
 $btn-padding: 43px 95px 43px 97px;
 $btn-border: 1px solid #018dc4;
@@ -27,3 +27,11 @@ $checkbox-size: 15px;
 $checkbox-top: -2px;
 $checkbox-left: -1px;
 $checkbox-border-size: 2px;
+
+// City Variables
+$city-map: (
+    // city image
+  enjoy-css1: ("./images/1.jpg"),
+  enjoy-css2: ("./images/2.jpg"),
+  enjoy-css3: ("./images/3.jpg")
+);

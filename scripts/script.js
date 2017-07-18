@@ -98,7 +98,7 @@ function buttonClick(){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const seattle = document.querySelector('input.enjoy-css');
+  const seattle = document.querySelector('input.enjoy-css1');
   const london = document.querySelector('input.enjoy-css2');
   const myLocation = document.querySelector('input.enjoy-css3');
 
@@ -106,28 +106,3 @@ document.addEventListener("DOMContentLoaded", function () {
   london.addEventListener('click', buttonClick);
   myLocation.addEventListener('click', addCoords)
 });
-
-
-// tempEval = eval("response.main.temp")
-// console.log(tempEval+ "\u00B0")
-// function buildWeatherReport() {
-// for (i=0; i<weatherInfo.length; i++) {
-//   var infoValue = eval(weatherInfo[i])
-//   console.log(infoValue);
-// };
-//   var information = form.info
-//   var i;
-//   for (i = 0; i < information.length; i++) {
-//     if (information[i].checked){
-//       var infoValue = eval(information[i].value)
-//       console.log(infoValue);
-//     }
-//   }
-// }
-
-// functionweatherBuilder() {
-//   console.log("building the weather report!")
-//   event.preventDefault();
-//   var form = document.querySelector("form");
-//   var newWeather = form.info.value
-//   weatherInfo.weather.push(newWeather);

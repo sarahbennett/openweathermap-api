@@ -79,7 +79,8 @@ label:after {
   color: $white;
 }
 
-.enjoy-css {
+@for $i from 1 through 3 {
+  .enjoy-css#{$i} {
     display: inline-block;
     box-sizing: content-box;
     cursor: pointer;
@@ -92,39 +93,8 @@ label:after {
     background-position: $btn-background;
     box-shadow: $btn-box-shadow;
     text-shadow: $btn-text-shadow;
-    background-image:url("../images/1.jpg")
-}
-
-.enjoy-css2 {
-  display: inline-block;
-  box-sizing: content-box;
-  cursor: pointer;
-  margin: $btn-margin;
-  padding: $btn-padding;
-  border: $btn-border;
-  border-radius: $btn-border-radius;
-  font: $btn-font;
-  color: $btn-color;
-  background-position: $btn-background;
-  box-shadow: $btn-box-shadow;
-  text-shadow: $btn-text-shadow;
-  background-image:url("../images/2.jpg")
-}
-
-.enjoy-css3 {
-  display: inline-block;
-  box-sizing: content-box;
-  cursor: pointer;
-  margin: $btn-margin;
-  padding: $btn-padding;
-  border: $btn-border;
-  border-radius: $btn-border-radius;
-  font: $btn-font;
-  color: $btn-color;
-  background-position: $btn-background;
-  box-shadow: $btn-box-shadow;
-  text-shadow: $btn-text-shadow;
-  background: linear-gradient(180deg, $gradient-blue 0, $gradient-blue 1%, $gradient-pink 100%);
+    background-image:url("../images/#{$i}.jpg")
+  }
 }
 
 input[type='checkbox'] {
