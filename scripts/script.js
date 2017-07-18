@@ -11,6 +11,8 @@ const coordinates = [
   {lat: 51.5074, lon: 0.1278} //london
 ]
 
+moment().format();
+
 function addCoords(){
   selectedCityIndex = this.getAttribute("data-index");
   navigator.geolocation.getCurrentPosition(geolocSuccess, geolocError);
